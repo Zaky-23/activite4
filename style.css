@@ -1,0 +1,74 @@
+body {
+	background-color: rgb(255, 255, 255);
+}
+
+ul {
+	list-style: none;
+}
+  
+ul li::before {
+	content: "\2022";  /* \2022 = unicode({bullet or "tete"})*/
+	color: red; 
+	font-weight: bold; 
+	display: inline-block; 
+	width: 1em; 
+	margin-left: -1em;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #000000;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+.collapsible {
+	background-color: rgba(255, 166, 0, 0.606);
+	color: #000;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 30px;
+}
+  
+.active, .collapsible:hover {
+	background-color: white;
+}
+  
+.content {
+	padding: 0 18px;
+	background-color: rgba(221, 181, 143, 0.434);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	font-size: 125%;
+}
+
+.collapsible:after {
+	content: '\02795'; /* \02795 == unicode('+') */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+  
+.active:after {
+	content: "\2796"; /* \02796 == unicode('-') */
+}
+
+.paragraph {
+	font-weight: 500;
+}
+
