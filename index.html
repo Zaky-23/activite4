@@ -1,19 +1,19 @@
 <html>
 <head>
-	<title> Activite 4 - Module TIC </title>
+	<title> Activité 4 - Module TIC </title>
 	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<h1><b><u>Activité 4 - TIC</b></u></h1>
 </head>
 
 <body>
 <div style="font-size: 120%; stroke-width: 150%;" class="listetu">
-	<h1>  </h1>
 	<table border="2" cellpadding="10px" style="border-color: orange;">
-		<caption> <h1><u>Liste des etudiants</u></h1></caption>
+		<caption> <h2><u>Liste des etudiants</u></h2></caption>
 		<tr>
 			<th>Matricule</th>
 			<th>Nom</th>
-			<th>Prenom</th>
-			<th>Specialite</th>
+			<th>Prénom</th>
+			<th>Spécialité</th>
 			<th>Section</th>
 			<th>Partie</th>
 		</tr>
@@ -113,12 +113,17 @@
 		</p>
 
 		<p>   
-		Les TIC sont divisées en trois groupes: La Téléinformatique qui implique l'échange de l'information entre les ordinateurs, la Télécommunication qui veut dire traiter les signale sans ordinateurs et les Électroniques du consommateur. Elles visent a fournir la connectivité et la fiabilité tout en étant simple et flexible.
+			Les TIC sont divisées en trois groupes: La Téléinformatique qui implique l'échange de l'information entre les ordinateurs, la Télécommunication qui veut dire traiter les signale sans ordinateurs et les Électroniques du consommateur. Elles visent a fournir la connectivité et la fiabilité tout en étant simple et flexible.
 		</p>
-		Les TIC sont composées de partie matériel qui permettent le traitement l'information reçu et la partie logiciels qui exploitent les capacités de ce matériel pour la traiter.
-		   
-		Les caractéristiques des technologies de l'information et de la communication sont la rapidité, la décentralisation du pouvoir, l'accès aux informations et la mondialisation. Ces dernières permettent une meilleure performance de l'entreprise et un partage rapide et facile d'informations entre les différents corps de l'entreprise.
-		
+
+		<p>
+			Les TIC sont composées de partie matériel qui permettent le traitement l'information reçu et la partie logiciels qui exploitent les capacités de ce matériel pour la traiter.
+		</p>
+
+		<p>
+			Les caractéristiques des technologies de l'information et de la communication sont la rapidité, la décentralisation du pouvoir, l'accès aux informations et la mondialisation. Ces dernières permettent une meilleure performance de l'entreprise et un partage rapide et facile d'informations entre les différents corps de l'entreprise.
+		</p>
+
 		L'initiation aux techniques de communication se compose de:
 		<ul class="paragraph">
 			<li> <b>Objectifs de communications:</b> Ils doivent être définis selon trois dimensions : cognitive, affective et comportementale.</li> 
@@ -168,10 +173,14 @@
 	<div class="content">
 	<p class="paragraph">
 		<!--TODO: ADD CHAPTER 5 FIRST HALF-->
-		Dans Git, chaque fichier dans un projet peut être : "suivi" ou "non suivi". Un fichier est suivi s'il appartenait au dernier instantané capturé par Git, sinon il est considéré comme non suivi et ce jusqu'à ce qu'il soit indexé et validé avant de pouvoir être inclus dans les instantanés ultérieurs. Un fichier suivi peut avoir l'état "modifié", "indexé" ou "validé".
+		<p>
+			Dans Git, chaque fichier dans un projet peut être : "suivi" ou "non suivi". Un fichier est suivi s'il appartenait au dernier instantané capturé par Git, sinon il est considéré comme non suivi et ce jusqu'à ce qu'il soit indexé et validé avant de pouvoir être inclus dans les instantanés ultérieurs. Un fichier suivi peut avoir l'état "modifié", "indexé" ou "validé".
 		Les nouveaux fichiers sont considérés comme non suivis quant à ceux modifiés, ils sont considérés comme tel tant qu'ils n'ont pas été indexés. Enfin, lorsqu'on enregistre un instantané, les fichiers qui y sont inclus sont à nouveau considérés comme validés, et le processus peut recommencer.
+		</p>
 
-		Un projet dans Git est composé de trois zones de travail : le répertoire de travail, la zone d'index et le répertoire Git. Les fichiers sont modifiés dans le répertoire de travail et peuvent être indexés dans la zone d'index avant d'être validés dans le répertoire Git ou sont stockées les méta-données et la base de données des objets du projet.
+		<p>
+			Un projet dans Git est composé de trois zones de travail : le répertoire de travail, la zone d'index et le répertoire Git. Les fichiers sont modifiés dans le répertoire de travail et peuvent être indexés dans la zone d'index avant d'être validés dans le répertoire Git ou sont stockées les méta-données et la base de données des objets du projet.
+		</p>
 
 		Voici en résumé ce qu'il faut pour initialiser un dépôt Git et ajouter des fichiers pour la première fois :
 		<ul>
@@ -183,15 +192,25 @@
 			<li>Utiliser la commande "git status" pour confirme que les fichiers ont été ajoutés en base et sont sous suivi de version.</li>
 		</ul>
 
-		Il est possible de créer un dépôt Git en clonant un dépôt existant à l'aide de la commande "Git clone".
+		<p>
+			Il est possible de créer un dépôt Git en clonant un dépôt existant à l'aide de la commande "Git clone".
+		</p>
 
-		Lorsqu'on travaille sur un projet, on peut ajouter, modifier ou supprimer des fichiers. Git permet de gérer ces différentes versions en enregistrant les changements. Pour ce faire, on utilise les commandes git add et git commit. Le commit se base sur l'état du fichier au moment du git add. Si on modifie le fichier après avoir effectué un git add, les dernières modifications ne seront pas enregistrées. Pour toujours enregistrer la dernière version d'un fichier, il est donc conseillé d'effectuer un git add juste avant le git commit. On peut également utiliser la commande git commit -a pour mettre en un coup les fichiers modifiés et déjà sous suivi dans la zone d'index, et les valider sans avoir à taper git add.
+		<p>
+			Lorsqu'on travaille sur un projet, on peut ajouter, modifier ou supprimer des fichiers. Git permet de gérer ces différentes versions en enregistrant les changements. Pour ce faire, on utilise les commandes git add et git commit. Le commit se base sur l'état du fichier au moment du git add. Si on modifie le fichier après avoir effectué un git add, les dernières modifications ne seront pas enregistrées. Pour toujours enregistrer la dernière version d'un fichier, il est donc conseillé d'effectuer un git add juste avant le git commit. On peut également utiliser la commande git commit -a pour mettre en un coup les fichiers modifiés et déjà sous suivi dans la zone d'index, et les valider sans avoir à taper git add.
+		</p>
 
-		La commande git log permet de consulter l'historique des commits Git, du plus récent au plus ancien, ainsi que la somme de contrôle SHA-1, l'auteur, la date et le message du commit.
+		<p>
+			La commande git log permet de consulter l'historique des commits Git, du plus récent au plus ancien, ainsi que la somme de contrôle SHA-1, l'auteur, la date et le message du commit.
+		</p>
 
-		L'utilisation d'un logiciel de gestion de version(Git) permet de revenir à un état antérieur d'un projet enregistré si après un commit certaines modifications sont inadaptées, et ce en utilisant la commande "git checkout -- nom-du-fichier" ou la commande "git restore".
+		<p>
+			L'utilisation d'un logiciel de gestion de version(Git) permet de revenir à un état antérieur d'un projet enregistré si après un commit certaines modifications sont inadaptées, et ce en utilisant la commande "git checkout -- nom-du-fichier" ou la commande "git restore".
+		</p>
 
-		Dans Git, créer une branche permet de développer et tester de nouvelles fonctionnalités sans impacter le projet de base. Contrairement à d'autres systèmes de contrôle de version, Git utilise des pointeurs plutôt que de créer des copies physiques du répertoire de travail pour la création de branches, ce qui facilite grandement leur création et leur fusion. La branche par défaut est "master" mais peut être renommée sans conséquence.
+		<p>
+			Dans Git, créer une branche permet de développer et tester de nouvelles fonctionnalités sans impacter le projet de base. Contrairement à d'autres systèmes de contrôle de version, Git utilise des pointeurs plutôt que de créer des copies physiques du répertoire de travail pour la création de branches, ce qui facilite grandement leur création et leur fusion. La branche par défaut est "master" mais peut être renommée sans conséquence.
+		</p>
 	</p>
 </div>
 
