@@ -31,6 +31,12 @@ hr:after {
     top: -13px;
 }
 
+.listetu {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
 .collapsible {
 	background-color: rgba(255, 166, 0, 0.606);
 	color: #000;
