@@ -98,3 +98,9 @@ hr:after {
 	padding: 1%;
 	justify-content: center;
 }
+
+.code-snippet {
+	background-color: #eac49db1;
+	font-weight: 900;
+	font-size: 110%;
+}

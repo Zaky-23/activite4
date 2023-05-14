@@ -374,13 +374,13 @@
 				&lt;/html&gt;<br>
 			</code>
 		</div>
-		<ul class="paragraph">
-			<li>La balise &lt;html&gt;... &lt;/html&gt; délimite le début et la fin du document.</li>
-			<li>La balise &lt;head&gt;... &lt;/head&gt; est l'entête du document.</li>
-			<li>La balise &lt;titl&gt; ... &lt;/title&gt; est le titre du document.</li>
-			<li>La balise &lt;body&gt;... &lt;/body&gt; est le corps du document.</li>
-			<li>Les titres sont définis par les balises &lt;hn&gt; ... &lt;/hn&gt;, où n représente le niveau de titre (de 1 à 6). Par exemple, &lt;h1&gt; Grand titre &lt;/h1&gt; est un titre de niveau 1.</li>
-			<li>Et les paragraphes sont définis par les balises &lt;p&gt; … &lt;p&gt;.</li>
+		<ul>
+			<li>La balise <b>&lt;html&gt;</b>... <b>&lt;/html&gt;</b> délimite le début et la fin du document.</li>
+			<li>La balise <b>&lt;head&gt;</b>... <b>&lt;/head&gt;</b> est l'entête du document.</li>
+			<li>La balise <b>&lt;titl&gt;</b> ... <b>&lt;/title&gt;</b> est le titre du document.</li>
+			<li>La balise <b>&lt;body&gt;</b>... <b>&lt;/body&gt;</b> est le corps du document.</li>
+			<li>Les titres sont définis par les balises <b>&lt;hn&gt;</b> ... <b>&lt;/hn&gt;</b>, où n représente le niveau de titre (de 1 à 6). Par exemple, <b>&lt;h1&gt;</b> Grand titre <b>&lt;/h1&gt;</b> est un titre de niveau 1.</li>
+			<li>Et les paragraphes sont définis par les balises <b>&lt;p&gt;</b> ... <b>&lt;p&gt;</b>.</li>
 		</ul>
 		</p>
 	</p>
@@ -391,32 +391,54 @@
 	<button type="button" class="collapsible"><u>Partie 5:</u> <u>Systeme de Gestion de Version</u></button>
 	<div class="content">
 	<p class="paragraph">
-		<!--TODO: ADD CHAPTER 5 FIRST HALF-->
+		<!--TODO: ADD CHAPTER 5 FIRST FIRST HALF-->
 		<p>
-			Dans Git, chaque fichier dans un projet peut être : "suivi" ou "non suivi". Un fichier est suivi s'il appartenait au dernier instantané capturé par Git, sinon il est considéré comme non suivi et ce jusqu'à ce qu'il soit indexé et validé avant de pouvoir être inclus dans les instantanés ultérieurs. Un fichier suivi peut avoir l'état "modifié", "indexé" ou "validé".
-		Les nouveaux fichiers sont considérés comme non suivis quant à ceux modifiés, ils sont considérés comme tel tant qu'ils n'ont pas été indexés. Enfin, lorsqu'on enregistre un instantané, les fichiers qui y sont inclus sont à nouveau considérés comme validés, et le processus peut recommencer.
+			Le paramétrage de Git est utilisé pour configurer et personnaliser votre environnement de travail Git y compris la configuration de votre nom d'utilisateur et votre adresse e-mail, la création d'alias et la modification des fichiers.
+			Premièrement, installez Git et configurez votre nom d'utilisateurs en utilisant: <code class="code-snippet">'git config --global user.name «votre nom»'</code> et <code class="code-snippet">'git config  --global user.email «votre@email.com»'</code> ces informations identifieront les auteurs des commits dans votre référentiel Git.<br>
+			Vous pouvez assurer l'affichage des informations en activant la coloration de la sortie <code class="code-snippet">'git config  --global color ui.true'</code> et aussi créer des alias pour les commandes fréquemment utilisées par exemple <code class="code-snippet">'git config --global alias.info informatique'</code> info pour informatique.<br>
+			Git stocke les paramétrer de configurations dans des fichiers le fichier global est situé dans votre répertoire sur Linux/MacOS ou sur Windows et le fichier local se trouve dans le répertoire du projet.<br>
+			Il est important de personnaliser Git selon vos besoins pour faciliter vos tâches avec cet outil de contrôle.
 		</p>
 
 		<p>
-			Un projet dans Git est composé de trois zones de travail : le répertoire de travail, la zone d'index et le répertoire Git. Les fichiers sont modifiés dans le répertoire de travail et peuvent être indexés dans la zone d'index avant d'être validés dans le répertoire Git ou sont stockées les méta-données et la base de données des objets du projet.
+			Pour démarrer un dépôt Git:
+			<ul class="paragraph">
+				<li>Initialiser le dépôt: utiliser la commande <code class="code-snippet">'git init'</code> pour créer un nouveau Git.</li>
+				<li>Ajoutez des fichiers: utiliser la commande <code class="code-snippet">'git add &lt;nom du fichier>'</code> pour ajouter des fichiers spécifiques ou <code class="code-snippet">'git add .'</code> pour ajouter tous les fichiers du répertoire.</li>
+				<li>Créer un commit: utilisez la commande <code class="code-snippet">'git commit -m «message de commit»'</code>.</li>
+			</ul>
+			Vous pouvez aussi gérer des branches et collaborer avec d'autres développeurs en utilisant un dépôt distant mais ça reste facultatif.
+		</p>
+
+		<p>
+			Git permet la gestion des informations en suivant les modifications, en gérant les versions en assurant la coopération entre les développeurs. Les branches permettent  de travailler sur des fonctionnalités et les problèmes peuvent être résolus lors de la fusion des modifications. Chaque commit est associé a un auteur et les dépôts distants facilitent le partage et l'enregistrement du code, finalement Git est un outil essentiel pour la gestion efficace des informations dans un projet de développement.
+		</p>
+
+		<p>
+			Dans Git, chaque fichier dans un projet peut être : "suivi" ou "non suivi". Un fichier est suivi s'il appartenait au dernier instantané capturé par Git, sinon il est considéré comme non suivi et ce jusqu'à ce qu'il soit indexé et validé avant de pouvoir être inclus dans les instantanés ultérieurs. Un fichier suivi peut avoir l'état "modifié", "indexé" ou "validé".
+			Les nouveaux fichiers sont considérés comme non suivis quant à ceux modifiés, ils sont considérés comme tel tant qu'ils n'ont pas été indexés. Enfin, lorsqu'on enregistre un instantané, les fichiers qui y sont inclus sont à nouveau considérés comme validés, et le processus peut recommencer.
+		</p>
+
+		<p>
+			Un projet dans Git est composé de trois zones de travail: le répertoire de travail, la zone d'index et le répertoire Git. Les fichiers sont modifiés dans le répertoire de travail et peuvent être indexés dans la zone d'index avant d'être validés dans le répertoire Git ou sont stockées les méta-données et la base de données des objets du projet.
 		</p>
 
 		Voici en résumé ce qu'il faut pour initialiser un dépôt Git et ajouter des fichiers pour la première fois :
 		<ul>
 			<li>Importer un projet existant sur son ordinateur ou un serveur distant dans Git.</li>
-			<li>On utilise la commande "git init" pour initialiser un dépôt Git et créer un sous-répertoire ".git" qui contient les fichiers nécessaires pour que Git fonctionne.</li>
-			<li>Utiliser la commande "git status" pour déterminer l'état des fichiers de notre répertoire.</li>
-			<li>Utiliser la commande "git add" pour indexer les fichiers qui doivent être versionnés.</li>
-			<li>Utiliser la commande "git commit" pour valider les fichiers et les ajouter en base.</li>
-			<li>Utiliser la commande "git status" pour confirme que les fichiers ont été ajoutés en base et sont sous suivi de version.</li>
+			<li>On utilise la commande <code class="code-snippet">'git init'</code> pour initialiser un dépôt Git et créer un sous-répertoire <code class="code-snippet">".git"</code> qui contient les fichiers nécessaires pour que Git fonctionne.</li>
+			<li>Utiliser la commande <code class="code-snippet">'git status'</code> pour déterminer l'état des fichiers de notre répertoire.</li>
+			<li>Utiliser la commande <code class="code-snippet">'git add'</code> pour indexer les fichiers qui doivent être versionnés.</li>
+			<li>Utiliser la commande <code class="code-snippet">'git commit'</code> pour valider les fichiers et les ajouter en base.</li>
+			<li>Utiliser la commande <code class="code-snippet">'git status'</code> pour confirme que les fichiers ont été ajoutés en base et sont sous suivi de version.</li>
 		</ul>
 
 		<p>
-			Il est possible de créer un dépôt Git en clonant un dépôt existant à l'aide de la commande "Git clone".
+			Il est possible de créer un dépôt Git en clonant un dépôt existant à l'aide de la commande <code class="code-snippet">'git clone'</code>.
 		</p>
 
 		<p>
-			Lorsqu'on travaille sur un projet, on peut ajouter, modifier ou supprimer des fichiers. Git permet de gérer ces différentes versions en enregistrant les changements. Pour ce faire, on utilise les commandes git add et git commit. Le commit se base sur l'état du fichier au moment du git add. Si on modifie le fichier après avoir effectué un git add, les dernières modifications ne seront pas enregistrées. Pour toujours enregistrer la dernière version d'un fichier, il est donc conseillé d'effectuer un git add juste avant le git commit. On peut également utiliser la commande git commit -a pour mettre en un coup les fichiers modifiés et déjà sous suivi dans la zone d'index, et les valider sans avoir à taper git add.
+			Lorsqu'on travaille sur un projet, on peut ajouter, modifier ou supprimer des fichiers. Git permet de gérer ces différentes versions en enregistrant les changements. Pour ce faire, on utilise les commandes <code class="code-snippet">'git add et git commit'</code>. Le commit se base sur l'état du fichier au moment du <code class="code-snippet">'git add'</code>. Si on modifie le fichier après avoir effectué un git add, les dernières modifications ne seront pas enregistrées. Pour toujours enregistrer la dernière version d'un fichier, il est donc conseillé d'effectuer un git add juste avant le <code class="code-snippet">'git commit'</code>. On peut également utiliser la commande <code class="code-snippet">'git commit -a'</code> pour mettre en un coup les fichiers modifiés et déjà sous suivi dans la zone d'index, et les valider sans avoir à taper git add.
 		</p>
 
 		<p>
@@ -424,11 +446,11 @@
 		</p>
 
 		<p>
-			L'utilisation d'un logiciel de gestion de version(Git) permet de revenir à un état antérieur d'un projet enregistré si après un commit certaines modifications sont inadaptées, et ce en utilisant la commande "git checkout -- nom-du-fichier" ou la commande "git restore".
+			L'utilisation d'un logiciel de gestion de version(Git) permet de revenir à un état antérieur d'un projet enregistré si après un commit certaines modifications sont inadaptées, et ce en utilisant la commande <code class="code-snippet">'git checkout -- nom-du-fichier'</code> ou la commande <code class="code-snippet">'git restore'</code>.
 		</p>
 
 		<p>
-			Dans Git, créer une branche permet de développer et tester de nouvelles fonctionnalités sans impacter le projet de base. Contrairement à d'autres systèmes de contrôle de version, Git utilise des pointeurs plutôt que de créer des copies physiques du répertoire de travail pour la création de branches, ce qui facilite grandement leur création et leur fusion. La branche par défaut est "master" mais peut être renommée sans conséquence.
+			Dans Git, créer une branche permet de développer et tester de nouvelles fonctionnalités sans impacter le projet de base. Contrairement à d'autres systèmes de contrôle de version, Git utilise des pointeurs plutôt que de créer des copies physiques du répertoire de travail pour la création de branches, ce qui facilite grandement leur création et leur fusion. La branche par défaut est <code class="code-snippet">'master'</code> mais peut être renommée sans conséquence.
 		</p>
 	</p>
 </div>
