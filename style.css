@@ -31,7 +31,7 @@ hr:after {
     top: -13px;
 }
 
-.listetu {
+.list-etu {
 	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -62,6 +62,15 @@ hr:after {
 	font-size: 125%;
 }
 
+.content-mini {
+	padding: 0 18px;
+	background-color: rgba(255, 255, 255, 0.434);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	font-size: 125%;
+}
+
 .collapsible:after {
 	content: '\02795'; /* \02795 == unicode('+') */
 	font-size: 13px;
@@ -69,7 +78,8 @@ hr:after {
 	float: right;
 	margin-left: 5px;
 }
-  
+
+
 .active:after {
 	content: "\2796"; /* \02796 == unicode('-') */
 }
@@ -78,3 +88,13 @@ hr:after {
 	font-weight: 500;
 }
 
+.box {
+	background-color: #fff;
+	width: 30%;
+	height: 30%;
+	color: #000;
+	border: 3px double #eb8b2a;
+	margin: 0;
+	padding: 0;
+	
+}
