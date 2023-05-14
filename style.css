@@ -90,11 +90,11 @@ hr:after {
 
 .box {
 	background-color: #fff;
-	width: 30%;
-	height: 30%;
+	width: 50%;
+	height: 47%;
 	color: #000;
 	border: 3px double #eb8b2a;
 	margin: 0;
-	padding: 0;
-	
+	padding: 1%;
+	justify-content: center;
 }
