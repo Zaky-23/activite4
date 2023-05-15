@@ -57,16 +57,7 @@ hr:after {
 	padding: 0 18px;
 	background-color: rgba(221, 181, 143, 0.434);
 	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-	font-size: 125%;
-}
-
-.content-mini {
-	padding: 0 18px;
-	background-color: rgba(255, 255, 255, 0.434);
-	max-height: 0;
-	overflow: hidden;
+	overflow: auto;
 	transition: max-height 0.2s ease-out;
 	font-size: 125%;
 }
