@@ -391,7 +391,39 @@
 	<button type="button" class="collapsible"><u>Partie 5:</u> <u>Systeme de Gestion de Version</u></button>
 	<div class="content">
 	<p class="paragraph">
-		<!--TODO: ADD CHAPTER 5 FIRST FIRST HALF-->
+		<p>
+			Dans ce chapitre nous allons comprendre l'utilité d'un Git et l'indisponibilité des systèmes de gestion, nous allons aussi apprendre à différencier un Git et un GitHub.
+		</p>
+
+		<p>
+			Git est un logiciel créé par Linus Torvalds en 2005 permettant de conserver un historique des modifications effectuées sur un projet, il facilite donc le travail d'équipe et la gestion des projets, ce qui le rend très utile au jour d'aujourd'hui.
+		</p>
+
+		<p>
+			A quoi sert concrètement un système de gestion de version? Sans un Git, les modifications effectuées par un développeur  sur un projet quelconque peuvent entrer en conflit avec celles de son coéquipier, Git permet alors de conserver l'historique des modifications ainsi les développeurs peuvent avoir accès aux changements et de coordonner plus facilement un travail, aussi  Git offre de nombreuses fonctionnalités, comme la possibilité de synchroniser les dossiers locaux avec le serveur et de mettre à jour les différences automatisées entre les versions. 
+		</p>
+
+		<p>
+			Les deux modèles des logiciels de gestion de version: modèle centralisé vs modèle décentralisé. Le Git se compose de deux modèles:
+			<ul>
+				<li>Le modèle centralisé: qui est basé sur la centralisation du code source lié au projet, les différents utilisateurs doivent se connecter à un serveur distant central où est hébergé le code.</li>
+				<li>Le model distribué: le code source est hébergé dans les machines des utilisateurs, il a beaucoup d'avantages tel que la simplicité et la flexibilité du travail vu que chacun travaille sur sa propre machine donc plus besoin d'être connecté à un serveur central, il assure aussi la sécurité du projet.</li>
+			</ul>
+		</p>
+
+		<p>
+			Qu'est-ce que GitHub?  Git est un système de contrôle de version utilisé pour sauvegarder les modifications apportées à un projet, il permet aussi de retourner à l'ancienne version appelée un dépôt. Quant à GitHub c'est un système d'hébergement web (en ligne) pour les dépôts Git, il fournit donc aux développeurs un endroit pour stocker et partager leurs codes et travailler avec d'autres personnes sur le même code, suivre les modifications apportées au code, résoudre des problèmes et collaborer avec d'autres membres de la communauté GitHub, ce qui fait de lui le plus grand hébergeur de dépôts Git du monde. 
+		</p>
+
+		<p>
+			Utiliser Git: ligne de commande, console et interface graphique. Différentes interfaces peuvent être utilisées pour utiliser Git, ici nous allons nous servir de la console (lignes de commande) plutôt qu'une interface graphique pour les raisons suivantes:<br>
+			D'abord c'est le seul moyen d'avoir accès à toutes les commandes Git. Ensuite tout le monde pourra suivre le même cours vu que c'est le même accès commandes. Enfin il suffit de savoir utiliser la version en ligne pour pouvoir manipuler n'importe quelle autre interface graphique. 
+		</p>
+
+		<p>
+			Pour installer Git il suffit de se rendre au site <a href="https://git-scm.com/downloads" target="_blank">Git SCM</a> et de suivre les instructions. 
+		</p>
+
 		<p>
 			Le paramétrage de Git est utilisé pour configurer et personnaliser votre environnement de travail Git y compris la configuration de votre nom d'utilisateur et votre adresse e-mail, la création d'alias et la modification des fichiers.
 			Premièrement, installez Git et configurez votre nom d'utilisateurs en utilisant: <code class="code-snippet">'git config --global user.name «votre nom»'</code> et <code class="code-snippet">'git config  --global user.email «votre@email.com»'</code> ces informations identifieront les auteurs des commits dans votre référentiel Git.<br>
